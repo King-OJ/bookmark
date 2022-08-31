@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-btn {
+  height: 26px;
+  width: 26px;
+  position: relative;
+}
+
+.top,
+.mid,
+.bottom {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 26px;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.top {
+
+}
+
+.mid {
+  transform: translateY(9px);
+}
+
+.bottom {
+  transform: translateY(18px);
+}
+
+.features .active {
+  border-bottom: 3px solid hsl(0, 94%, 66%);
+}
+
+.ficon:hover {
+  -webkit-filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+    brightness(101%) contrast(96%);
+          filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+    brightness(101%) contrast(96%);
+}
