@@ -5,13 +5,9 @@ export default function FAQ() {
 
   function toggleDetail(e){
 
-    if(e.target.id === "title"){
+    if(e.target.id === "title" || e.target.id === "icon"){
       e.target.parentNode.parentNode.firstChild.nextSibling.classList.toggle("hidden")
-    } 
-    else if(e.target.id === "icon") {
-      e.target.parentNode.parentNode.parentNode.firstChild.nextSibling.classList.toggle("hidden")
-    }
-    else {
+    } else {
       e.target.parentNode.children[1].classList.toggle('hidden')
     }    
     
@@ -25,63 +21,112 @@ export default function FAQ() {
         <p className="text-md max-w-md mx-auto font-medium text-center mb-16">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
 
         {/* questions box */}
-        <div className="max-w-md md:max-w-2xl mx-auto divide-y">
+        <div className="max-w-md md:max-w-2xl mx-auto">
 
-          {/* question 1 */}
-          <div className="group text-gray-500 py-4" onClick={(e)=>
-              toggleDetail(e)
-             }>
-            <div className="group flex items-center justify-between hover:cursor-pointer">
-              <h5 className="group-hover:text-softRed" id='title'>What is Bookmark?</h5>
-              <div className="group-focus:-rotate-180 transition duration-500 ease group-focus:text-red-500" id='icon'>
-                <img src={arrowUp} alt="" className=""  />
-              </div>
-            </div>
-            
-            <p className='mt-4 hidden' id="detail">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+        {/* Question tab 1 */}
+        <div class="py-1 border-b outline-none group" tabindex="1">
+          {/* Tab Flex Container */}
+          <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease group">
+            {/* tab title */}
+            <div class="transition duration-500 ease group-hover:text-red-500">What is Bookmark?</div>
+            {/* Arrow */}
+            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div> 
           </div>
 
-          {/* question 2 */}
-          <div className="group text-gray-500 py-4" onClick={(e)=>
-              toggleDetail(e)
-             }>
-            <div className="group flex items-center justify-between hover:cursor-pointer">
-              <h5 className="group-hover:text-softRed" id='title'>How can i request a new browser?</h5>
-              <div className="group-focus:-rotate-180 transition duration-500 ease group-focus:text-red-500" id='icon'>
-                <img src={arrowUp} alt="" className=""  />
-              </div>
-            </div>
-            
-            <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          {/* Tab Inner Content */}
+          <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+            <p class="py-2 text-justify text-gray-400">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          </div>
+          
+        </div>
+
+        {/* Question tab 2 */}
+        <div class="py-1 border-b outline-none group" tabindex="2">
+          {/* Tab Flex Container */}
+          <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease group">
+            {/* tab title */}
+            <div class="transition duration-500 ease group-hover:text-red-500">How can I request a new browser?</div>
+            {/* Arrow */}
+            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div> 
           </div>
 
-          {/* question 3 */}
-          <div className="group text-gray-500 py-4" onClick={(e)=>
-              toggleDetail(e)
-             }>
-            <div className="group flex items-center justify-between hover:cursor-pointer">
-              <h5 className="group-hover:text-softRed" id='title'>Is there a mobile app?</h5>
-              <div className="group-focus:-rotate-180 transition duration-500 ease group-focus:text-red-500" id='icon'>
-                <img src={arrowUp} alt="" className=""  />
-              </div>
-            </div>
-            
-            <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          {/* Tab Inner Content */}
+          <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+            <p class="py-2 text-justify text-gray-400">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          </div>
+          
+        </div>
+
+        {/* Question tab 3 */}
+        <div class="py-1 border-b outline-none group" tabindex="3">
+          {/* Tab Flex Container */}
+          <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease group">
+            {/* tab title */}
+            <div class="transition duration-500 ease group-hover:text-red-500">Is ther a mobile app?</div>
+            {/* Arrow */}
+            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div> 
           </div>
 
-          {/* question 4 */}
-          <div className="group text-gray-500 py-4" onClick={(e)=>
-              toggleDetail(e)
-             }>
-            <div className="group flex items-center justify-between hover:cursor-pointer">
-              <h5 className="group-hover:text-softRed" id='title'>What about other Chromium browsers?</h5>
-              <div className="group-focus:-rotate-180 transition duration-500 ease group-focus:text-red-500" id='icon'>
-                <img src={arrowUp} alt="" className=""  />
-              </div>
-            </div>
-            
-            <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          {/* Tab Inner Content */}
+          <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+            <p class="py-2 text-justify text-gray-400">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
           </div>
+          
+        </div>
+
+        {/* Question tab 4 */}
+        <div class="py-1 border-b outline-none group" tabindex="4">
+          {/* Tab Flex Container */}
+          <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease group">
+            {/* tab title */}
+            <div class="transition duration-500 ease group-hover:text-red-500">What about other Chromium browsers?</div>
+            {/* Arrow */}
+            <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </div> 
+          </div>
+
+          {/* Tab Inner Content */}
+          <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+            <p class="py-2 text-justify text-gray-400">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
+          </div>
+          
+        </div>
+
 
         </div>
 
