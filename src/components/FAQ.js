@@ -3,16 +3,6 @@ import arrowUp from '../images/icon-arrow.svg'
 
 export default function FAQ() {
 
-  function toggleDetail(e){
-
-    if(e.target.id === "title" || e.target.id === "icon"){
-      e.target.parentNode.parentNode.firstChild.nextSibling.classList.toggle("hidden")
-    } else {
-      e.target.parentNode.children[1].classList.toggle('hidden')
-    }    
-    
-  }
-
   return (
     <section id="faq" className="px-6 py-16">
       <div className="max-w 4xl mx-auto">
