@@ -27,7 +27,7 @@ export default function FAQ() {
           <div className="group text-gray-500 py-4" onClick={(e)=>
               toggleDetail(e)
              }>
-            <div className="flex items-center justify-between hover:cursor-pointer">
+            <div className="group flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>What is Bookmark?</h5>
               <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
@@ -39,7 +39,7 @@ export default function FAQ() {
           <div className="group text-gray-500 py-4" onClick={(e)=>
               toggleDetail(e)
              }>
-            <div className="flex items-center justify-between hover:cursor-pointer">
+            <div className="group flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>How can i request a new browser?</h5>
               <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
@@ -51,7 +51,7 @@ export default function FAQ() {
           <div className="group text-gray-500 py-4" onClick={(e)=>
               toggleDetail(e)
              }>
-            <div className="flex items-center justify-between hover:cursor-pointer">
+            <div className="group flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>Is there a mobile app?</h5>
               <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
@@ -63,7 +63,7 @@ export default function FAQ() {
           <div className="group text-gray-500 py-4" onClick={(e)=>
               toggleDetail(e)
              }>
-            <div className="flex items-center justify-between hover:cursor-pointer">
+            <div className="group flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>What about other Chromium browsers?</h5>
               <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
