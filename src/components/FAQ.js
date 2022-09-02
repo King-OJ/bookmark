@@ -5,9 +5,13 @@ export default function FAQ() {
 
   function toggleDetail(e){
 
-    if(e.target.id === "title" || e.target.id === "icon"){
+    if(e.target.id === "title"){
       e.target.parentNode.parentNode.firstChild.nextSibling.classList.toggle("hidden")
-    } else {
+    } 
+    else if(e.target.id === "icon") {
+      e.target.parentNode.parentNode.parentNode.firstChild.nextSibling.classList.toggle("hidden")
+    }
+    else {
       e.target.parentNode.children[1].classList.toggle('hidden')
     }    
     
