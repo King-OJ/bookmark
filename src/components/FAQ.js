@@ -29,7 +29,7 @@ export default function FAQ() {
              }>
             <div className="flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>What is Bookmark?</h5>
-              <img src={arrowUp} alt="" className="transition duration-500 ease group-hover:-rotate-180" id='title' />
+              <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
             
             <p className='mt-4 hidden' id="detail">Call me, my name is Clement Ojigs. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
@@ -41,7 +41,7 @@ export default function FAQ() {
              }>
             <div className="flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>How can i request a new browser?</h5>
-              <img src={arrowUp} alt="" className="transition duration-500 ease group-hover:-rotate-180" id='title' />
+              <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
             
             <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
@@ -53,7 +53,7 @@ export default function FAQ() {
              }>
             <div className="flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>Is there a mobile app?</h5>
-              <img src={arrowUp} alt="" className="transition duration-500 ease group-hover:-rotate-180" id='title' />
+              <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
             
             <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
@@ -65,7 +65,7 @@ export default function FAQ() {
              }>
             <div className="flex items-center justify-between hover:cursor-pointer">
               <h5 className="group-hover:text-softRed" id='title'>What about other Chromium browsers?</h5>
-              <img src={arrowUp} alt="" className="transition duration-500 ease group-hover:-rotate-180" id='title' />
+              <img src={arrowUp} alt="" className="transition duration-500 ease group-focus:-rotate-180" id='title' />
             </div>
             
             <p className='mt-4 hidden' id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?</p>
